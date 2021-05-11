@@ -5,6 +5,6 @@
 version: 2
 updates:
   - package-ecosystem: "cargo"
-    directory: "/"
+    directory: "/my-crate-inside-workspace"
     schedule:
       interval: "daily"
