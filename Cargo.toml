@@ -1,0 +1,8 @@
+[package]
+name = "test-dependabot-rust-lockfile"
+version = "0.1.0"
+authors = ["David Pacheco <dap@oxidecomputer.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "=0.2.90"

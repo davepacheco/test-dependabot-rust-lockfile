@@ -1,0 +1,28 @@
+#
+# Configuration for GitHub-based CI, based on the stock GitHub Rust config.
+#
+name: Rust
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-18.04
+    steps:
+    # actions/checkout@v2
+    - uses: actions/checkout@28c7f3d2b5162b5ddd3dfd9a45aa55eaf396478b
+    - uses: actions-rs/toolchain@b223206e28798aa3c3668bdd6409258e6dc29172
+      with:
+        profile: minimal
+        toolchain: stable
+        override: true
+    - name: Report cargo version
+      run: cargo --version
+    - name: Build
+      run: cargo build --tests --verbose --locked
+    - name: Run tests
+      run: cargo test --verbose --locked
