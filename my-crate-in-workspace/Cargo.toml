@@ -5,4 +5,4 @@ authors = ["David Pacheco <dap@oxidecomputer.com>"]
 edition = "2018"
 
 [dependencies]
-libc = "0.2.90"
+libc = "0.2.113"
