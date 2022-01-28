@@ -2,9 +2,9 @@
 # It is not intended for manual editing.
 [[package]]
 name = "libc"
-version = "0.2.90"
+version = "0.2.116"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ba4aede83fc3617411dc6993bc8c70919750c1c257c6ca6a502aed6e0e2394ae"
+checksum = "565dbd88872dbe4cc8a46e527f26483c1d1f7afa6b884a3bd6cd893d4f98da74"
 
 [[package]]
 name = "test-dependabot-rust-lockfile"
